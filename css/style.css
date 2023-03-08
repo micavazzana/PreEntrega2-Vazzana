@@ -224,9 +224,20 @@ ul li a {
 }
 
 /*Contacto*/
-
+.contenido_contacto{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 5%;
+   
+}
+.formulario{
+   justify-content: center;
+}
 .data{
-    padding:15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 
@@ -234,6 +245,23 @@ ul li a {
 
 @media screen and (max-width:576px)
 {
+    /*BARRA DE NAVEGACION*/
+    .nav__h1{
+        font-size: 20px;
+    }
+    nav{
+        flex-direction: column;
+        height: 250px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    ul li a {
+        font-size: 13px;
+    }
+
     /*HOME*/
     .andalaosa{
         font-size: 35px;
@@ -301,6 +329,103 @@ ul li a {
         padding-right: 25%;
     }
     .servicios__items__cajitas {
-        padding: 8%;
+        padding: 5%;
+    }
+
+    /*CONTACTO*/
+    .contenido_contacto{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .data{
+        justify-content: center;
+        padding: 5%;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px)
+{
+    /*BARRA DE NAVEGACION*/
+    .nav__h1{
+        font-size: 23px;
+    }
+    nav{
+        flex-direction: column;
+        height: 250px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    ul li a {
+        font-size: 15px;
+    }
+
+    /*HOME*/
+    .andalaosa{
+        font-size: 35px;
+    }
+    .andalaosa__subtitle {
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .osa{
+        width:270px;
+    } 
+
+    /*Sobre Nosotros*/
+    .bear_power{
+        flex-direction: column;
+        height: 600px;
+    }
+    .bear_title {
+        font-size: 40px;
+        padding-left: 0%;
+    }
+    .bear_descripcion{
+        font-size: 20px;
+        text-align: center;
+    }
+    .emi {
+        height: 900px;
+        background-position-x:80%;
+        background-position-y: 40%;
+    }
+    .mica {
+        height: 900px;
+        background-position-x: 35%;
+        background-position-y: 70%;
+    }
+    .text_left{
+        text-align: center;
+        padding-top: 60%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0%;
+    }
+    .text_right{
+        text-align: center;
+        padding-top: 60%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0%;
+    }
+
+    /*Servicios*/
+    .servicios {
+        height: 1300px;
+    }
+    /*CONTACTO*/
+    .contenido_contacto{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .data{
+        justify-content: center;
+        padding: 5%;
     }
 }
